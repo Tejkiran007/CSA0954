@@ -1,0 +1,30 @@
+import java.util.*;
+public class squarearray
+{
+	public static void main(String[] args)
+	{
+		Scanner sc=new Scanner(System.in);
+		int l,u,i;
+		System.out.print("Enter lower range: ");
+		l=sc.nextInt();
+		System.out.print("Enter upper range: ");
+		u=sc.nextInt();
+		if(l>u)
+		{
+			System.out.print("Invalid");
+			return;
+		}
+		if(l==0 && u==0)
+		{
+			System.out.print("Invalid");
+			return;
+		}
+		else
+		System.out.print("[");
+		for(i=l;i<=u;i++)
+		{
+			System.out.print("("+i+","+i*i+"),");
+		}
+		System.out.print("]");
+	}
+}
